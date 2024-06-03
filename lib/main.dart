@@ -118,7 +118,7 @@ class NativeTextWidget extends StatelessWidget {
 class NativeTimer extends StatelessWidget {
   const NativeTimer({super.key});
 
-  final event = const EventChannel("native_event");
+  final EventChannel event = const EventChannel("native_event");
 
   Stream<String> nativeStream() {
     return event.receiveBroadcastStream().map((event) => event);
